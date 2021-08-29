@@ -1,0 +1,266 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(222, 241, 241);
+}
+
+.content {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 960px;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.content::before{
+    content:"" ;
+    position: absolute;
+    background-color: rgb(33, 163, 142);
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+
+    left: 0%;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.title-primary {
+    color: white;
+}
+
+.title-second {
+    color: rgb(33, 163, 142);
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.description-primary {
+    color: white;
+}
+
+.description-second {
+    color: gray;
+}
+
+.btn {
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    width: 150px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+}
+
+.btn-primary {
+background-color: transparent;
+border: 1px solid white;
+transition: background-color .5s;
+}
+
+.btn-primary:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(33, 163, 142);
+}
+
+.btn-second{
+    background-color: rgb(33, 163, 142);
+    border: 1px solid rgb(33, 163, 142);
+    transition: background-color .5s;
+}
+
+.btn-second:hover {
+    background-color: white;
+    border: 1px solid rgb(33, 163, 142);
+    color: rgb(33, 163, 142);
+}
+
+.first-content {
+    display: flex;
+}
+
+.first-content .second-colum {
+    z-index: 12;
+}
+
+
+.first-colum {
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+
+.second-colum {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media {
+    margin: 1rem 0;
+}
+
+
+
+.link-social-media:not(:first-child){
+    margin-left: 10px;
+
+}
+
+.link-social-media:hover .item-social-media {
+    transition: background-color .5s;
+}
+
+
+.link-social-media:hover .item-social-media{
+    background-color: rgb(33, 163, 142);
+    color: white;
+    border-color: rgb(33, 163, 142);
+}
+
+
+.list-social-media {
+    display: flex;
+    list-style-type: none;
+}
+
+.item-social-media {
+    border: 1px solid rgb(141, 140, 140);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: gray;
+    
+}
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+
+}
+
+.form input {
+    height: 45px;
+    width: 100%;
+    border: none;
+    background-color: rgb(226, 222, 222);
+    margin: 8px;
+    
+}
+
+
+input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0px 1000px rgb(226, 222, 222);
+    -webkit-text-fill-color: rgb black !important;
+}
+
+
+.label-input {
+    background-color: rgb(226, 222, 222);
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.icon-modify {
+    color: gray;
+    padding: 0 5px;
+}
+
+/* second-content */
+
+.second-content {
+    position: absolute;
+    display: flex;
+}
+
+.second-content .first-colum{
+    order: 2;
+    z-index: -1;
+}
+
+.second-content .second-colum{
+    order: 1;
+    z-index: -1;
+}
+.password {
+    color: rgb(33, 163, 142);
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.password::first-letter {
+    text-transform: capitalize;
+}
+
+.sign-in-js .first-content .first-colum,
+.sign-in-js .first-content .second-colum {
+    z-index: -1;
+}
+
+.sign-in-js .second-content .first-colum,
+.sign-in-js .second-content .second-colum {
+    z-index: 11;
+}
+
+.sign-in-js .content::before {
+    left: 60%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+.sign-up-js .second-content .first-colum,
+.sign-up-js .second-content .second-colum {
+    z-index: -1;
+}
+
+.sign-up-js .first-content .first-colum,
+.sign-up-js .first-content .second-colum {
+    z-index: 11;
+}
+
+
